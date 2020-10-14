@@ -1,0 +1,10 @@
+pandas
+pre-commit
+attrs
+pytest
+matplotlib
+scipy
+tabulate
+keras
+tensorflow == 2.0.0
+networkx
