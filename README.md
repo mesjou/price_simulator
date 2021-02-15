@@ -13,9 +13,7 @@ New agents or more sophisticated demand models integrate straightforwardly.
 The environment is able to handle an arbitrary amount of different agents.
 This makes a huge variety of experiments easily possible.
 
-## Development
-
-### First usage
+## First usage
 
 To start, you'll need `docker` installed. When done, run this line in price_simulator dir:
 
