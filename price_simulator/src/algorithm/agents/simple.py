@@ -126,3 +126,18 @@ class PenetrationPricer(AlwaysDefectAgent):
             return action_space[min_competitor - 1]
         else:
             return action_space[0]
+
+ 
+@attr.s
+class Follower(AlwaysDefectAgent):
+    """
+    Always plays the minimum price of last period.
+    Agent must be last in list.
+    
+    """
+
+    def play_price(self, state: Tuple, action_space: List, n_period: int, t: int):
+        competitor_actions = state[:-1]
+        min_competitor = int(np.where(np.array(action_space) == min(competitor_actions))[0])
+        
+        return action_space[min_competitor]
